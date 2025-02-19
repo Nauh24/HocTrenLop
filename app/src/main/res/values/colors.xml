@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="gray">#FF808080</color>
+    <color name="input_bg">#FFD3D3D3</color>
+    <color name="facebook">#FF3B5998</color>
+    <color name="google">#FFDB4437</color>
+    <color name="call">#4CAF50</color>
+</resources>
