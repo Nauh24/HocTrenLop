@@ -34,8 +34,7 @@ public class ListViewActivity extends AppCompatActivity {
         lv.setAdapter(adapter);
 
         // An cut
-        // Huan dep trai
-        // zsh
+        // Huan dep
     }
 
     private void initData() {
