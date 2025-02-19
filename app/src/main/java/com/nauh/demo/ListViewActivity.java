@@ -32,6 +32,10 @@ public class ListViewActivity extends AppCompatActivity {
         initData();
         adapter = new TechnologyAdapter(this, list);
         lv.setAdapter(adapter);
+
+        // An cut
+        // Huan dep trai
+        // zsh
     }
 
     private void initData() {
