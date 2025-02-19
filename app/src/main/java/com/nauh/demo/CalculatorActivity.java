@@ -43,7 +43,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 try {
                     n1 = Double.parseDouble(s1);
                     n2 = Double.parseDouble(s2);
-                    String kq = calculate(n1,n2, "+");
+                    String kq = calculate(n1,n2, "-");
                     rs.setText(kq);
                     Toast.makeText(getApplicationContext(), kq, Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
