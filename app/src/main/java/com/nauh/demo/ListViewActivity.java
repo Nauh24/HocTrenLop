@@ -2,6 +2,7 @@ package com.nauh.demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -62,4 +63,12 @@ public class ListViewActivity extends AppCompatActivity {
             list[i] = new Technology(imgs[i], names[i], subs[i], descs[i]);
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
 }

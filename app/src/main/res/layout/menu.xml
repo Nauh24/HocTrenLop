@@ -7,4 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Technology"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
