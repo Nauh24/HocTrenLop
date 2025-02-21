@@ -11,6 +11,27 @@
         <item>Spain</item>
         <item>Japan</item>
         <item>China</item>
+        <item>Korea</item>
+        <item>Thailand</item>
+        <item>Malaysia</item>
+        <item>Indonesia</item>
+        <item>Philippines</item>
+        <item>India</item>
+        <item>Australia</item>
+        <item>New Zealand</item>
+        <item>South Africa</item>
+        <item>Argentina</item>
+        <item>Brazil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Mexico</item>
+        <item>Peru</item>
+        <item>Uruguay</item>
+        <item>Belgium</item>
+        <item>Netherlands</item>
+        <item>Portugal</item>
+        <item>Sweden</item>
+
     </string-array>
 
     <string-array name="university">
