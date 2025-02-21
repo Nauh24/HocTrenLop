@@ -1,6 +1,8 @@
 package com.nauh.demo;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +17,7 @@ import com.nauh.demo.model.CatAdapter;
 
 import java.util.List;
 
-public class RecyclerViewActivity extends AppCompatActivity {
+public class RecyclerViewActivity extends AppCompatActivity implements CatAdapter.CatItemListener {
     private RecyclerView rv;
     private CatAdapter adapter;
 
@@ -26,6 +28,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         setContentView(R.layout.recycler_view);
         rv = findViewById(R.id.rview);
         adapter = new CatAdapter(getList());
+        adapter.setListener(this);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
         rv.setLayoutManager(gridLayoutManager);
         rv.setAdapter(adapter);
@@ -42,5 +45,11 @@ public class RecyclerViewActivity extends AppCompatActivity {
         );
 
         return list;
+    }
+
+    @Override
+    public void onClick(View view, int position) {
+        Cat cat = getList().get(position);
+        Toast.makeText(this, cat.getName(), Toast.LENGTH_SHORT).show();
     }
 }
