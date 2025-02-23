@@ -1,4 +1,4 @@
-package com.nauh.demo;
+package com.nauh.demo.recyclerview;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,12 +6,10 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.nauh.demo.R;
 import com.nauh.demo.model.Cat;
 import com.nauh.demo.model.CatAdapter;
 
