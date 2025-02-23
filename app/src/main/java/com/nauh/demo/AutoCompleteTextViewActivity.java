@@ -19,6 +19,8 @@ public class AutoCompleteTextViewActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.auto_complete_text_view);
 
+
+
         String[] countries = getResources().getStringArray(R.array.country);
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.oneAuto);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, countries);

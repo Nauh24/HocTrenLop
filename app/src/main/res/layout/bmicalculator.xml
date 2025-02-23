@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMICalculatorActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="BMI Calculator"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="Enter height (m):"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="160.dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintTop_toTopOf="@id/tvHeight"
+        app:layout_constraintStart_toEndOf="@id/tvHeight"
+        android:layout_marginStart="25.dp"/>
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Enter weight (kg):"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvHeight"
+        app:layout_constraintStart_toStartOf="@id/tvHeight"/>
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="160.dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintTop_toTopOf="@id/tvWeight"
+        app:layout_constraintStart_toStartOf="@id/etHeight"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30.dp"
+        android:layout_marginStart="50.dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Your BMI is: "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculate"
+        app:layout_constraintStart_toStartOf="@id/tvWeight"/>
+
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toTopOf="@id/tvResult"
+        app:layout_constraintStart_toEndOf="@id/tvResult"
+        android:layout_marginStart="50.dp"/>
+
+    <TextView
+        android:id="@+id/tvFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI = weight / (height)\u00B2"
+        android:textSize="16.sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24.dp"
+        android:layout_marginStart="100.dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
