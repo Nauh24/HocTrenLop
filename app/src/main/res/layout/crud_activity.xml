@@ -21,4 +21,53 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"/>
 
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter sescription"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter age"
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="Add"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="Update"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

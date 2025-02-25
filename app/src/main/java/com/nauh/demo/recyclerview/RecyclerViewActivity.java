@@ -11,13 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nauh.demo.R;
 import com.nauh.demo.model.Cat;
-import com.nauh.demo.model.CatAdapter;
+import com.nauh.demo.model.CatAdapter2;
 
 import java.util.List;
 
-public class RecyclerViewActivity extends AppCompatActivity implements CatAdapter.CatItemListener {
+public class RecyclerViewActivity extends AppCompatActivity implements CatAdapter2.CatItemListener {
     private RecyclerView rv;
-    private CatAdapter adapter;
+    private CatAdapter2 adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements CatAdapte
         EdgeToEdge.enable(this);
         setContentView(R.layout.recycler_view);
         rv = findViewById(R.id.rview);
-        adapter = new CatAdapter(getList());
+        adapter = new CatAdapter2(getList());
         adapter.setListener(this);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
         rv.setLayoutManager(gridLayoutManager);

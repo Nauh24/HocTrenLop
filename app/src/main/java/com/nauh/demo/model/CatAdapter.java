@@ -1,8 +1,10 @@
 package com.nauh.demo.model;
 
-import android.view.LayoutInflater;
+
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,26 +13,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nauh.demo.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class CatAdapter extends RecyclerView.Adapter<CatAdapter.CatViewHolder>{
-//    private Context context;
+public class CatAdapter extends RecyclerView.Adapter<CatAdapter.CatViewHolder> {
+    private Context context;
     private List<Cat> mList;
-    private CatItemListener listener;
 
-    public void setListener(CatItemListener listener) {
-        this.listener = listener;
-    }
-
-    public CatAdapter(List<Cat> mList) {
-//        this.context = context;
-        this.mList = mList;
+    public CatAdapter(Context context) {
+        this.context = context;
+        mList = new ArrayList<>();
     }
 
     @NonNull
     @Override
     public CatViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view, parent, false);
+        View view = View.inflate(context, R.layout.cat_item, null);
         return new CatViewHolder(view);
     }
 
@@ -41,13 +39,9 @@ public class CatAdapter extends RecyclerView.Adapter<CatAdapter.CatViewHolder>{
             return;
         }
         holder.img.setImageResource(cat.getImg());
-        holder.tv.setText(cat.getName());
-//        holder.cardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(context.getApplicationContext(), cat.getName(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        holder.tvName.setText(cat.getName());
+        holder.tvDesc.setText(cat.getDesc());
+        holder.tvAge.setText("Age: " + cat.getAge());
     }
 
     @Override
@@ -58,28 +52,19 @@ public class CatAdapter extends RecyclerView.Adapter<CatAdapter.CatViewHolder>{
         return 0;
     }
 
-    public class CatViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        @Override
-        public void onClick(View view) {
-            if (listener != null) {
-                listener.onClick(view, getAdapterPosition());
-            }
-        }
-
+    public class CatViewHolder extends RecyclerView.ViewHolder {
         private ImageView img;
-        private TextView tv;
-//        private CardView cardView;
+        private TextView tvName, tvDesc, tvAge;
+        private Button btnDelete;
 
-        public CatViewHolder(@NonNull View itemView) {
-            super(itemView);
-            img = itemView.findViewById(R.id.img);
-            tv = itemView.findViewById(R.id.tname);
-            itemView.setOnClickListener(this);
-//            cardView = itemView.findViewById(R.id.cview);
+        public CatViewHolder(@NonNull View view) {
+            super(view);
+            img = view.findViewById(R.id.img);
+            tvName = view.findViewById(R.id.tvName);
+            tvDesc = view.findViewById(R.id.tvDesc);
+            tvAge = view.findViewById(R.id.tvAge);
+            btnDelete = view.findViewById(R.id.btnDelete);
         }
-    }
-
-    public interface CatItemListener {
-        void onClick(View view, int position);
     }
 }
+
