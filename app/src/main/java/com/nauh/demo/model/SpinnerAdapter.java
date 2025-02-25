@@ -9,13 +9,16 @@ import android.widget.ImageView;
 
 import com.nauh.demo.R;
 
-public class SpinnerAdapter extends BaseAdapter {
-    private int[] imgs = {R.drawable.cat1, R.drawable.cat2, R.drawable.cat3, R.drawable.cat4, R.drawable.cat5, R.drawable.cat6};
 
+public class SpinnerAdapter extends BaseAdapter {
+    private int[] imgs;
+    //    private int[] imgs={R.drawable.cat1,R.drawable.cat2,R.drawable.cat3,
+//            R.drawable.cat4,R.drawable.cat5,R.drawable.cat6};
     private Context context;
 
-    public SpinnerAdapter(Context context) {
+    public SpinnerAdapter(Context context,int[] imgs) {
         this.context = context;
+        this.imgs=imgs;
     }
 
     @Override
@@ -34,10 +37,10 @@ public class SpinnerAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View view, ViewGroup viewGroup) {
-        View item = LayoutInflater.from(context).inflate(R.layout.image_item, viewGroup, false);
-        ImageView img = item.findViewById(R.id.imgView);
-        img.setImageResource(imgs[position]);
+    public View getView(int postion, View view, ViewGroup viewGroup) {
+        View item= LayoutInflater.from(context).inflate(R.layout.image_item,viewGroup,false);
+        ImageView img=item.findViewById(R.id.img);
+        img.setImageResource(imgs[postion]);
         return item;
     }
 }

@@ -2,20 +2,22 @@ package com.nauh.demo.model;
 
 public class Cat {
     private int img;
-    private String name, desc;
+    private String name,describe;
+    private double price;
 
-    private double age;
+    public Cat() {
+    }
 
     public Cat(int img, String name) {
         this.img = img;
         this.name = name;
     }
 
-    public Cat(int img, String name, String desc, double age) {
+    public Cat(int img, String name, String describe, double price) {
         this.img = img;
         this.name = name;
-        this.desc = desc;
-        this.age = age;
+        this.describe = describe;
+        this.price = price;
     }
 
     public int getImg() {
@@ -34,19 +36,19 @@ public class Cat {
         this.name = name;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescribe() {
+        return describe;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescribe(String describe) {
+        this.describe = describe;
     }
 
-    public double getAge() {
-        return age;
+    public double getPrice() {
+        return price;
     }
 
-    public void setAge(double age) {
-        this.age = age;
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
