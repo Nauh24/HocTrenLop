@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -92,6 +93,18 @@ public class ViewPagerTablayoutActivity extends AppCompatActivity implements Vie
                 viewPager.setCurrentItem(position - 1);
             }
         }
+
+//        EditText etName = v.findViewById(R.id.etName);
+//        Button button = v.findViewById(R.id.button);
+//
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String name = etName.getText().toString();
+//                etName.setText("Hello " + name);
+//                etName.setBackgroundColor(Color.BLUE);
+//            }
+//        });
     }
 
     private void setTablayoutTitleColor() {
@@ -117,4 +130,5 @@ public class ViewPagerTablayoutActivity extends AppCompatActivity implements Vie
         }
         super.onBackPressed();
     }
+
 }

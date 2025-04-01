@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nauh.demo.model.Tour;
 import com.nauh.demo.model.TourAdapter;
-import com.nauh.demo.model.SpinnerAdapter;
+import com.nauh.demo.adapter.SpinnerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

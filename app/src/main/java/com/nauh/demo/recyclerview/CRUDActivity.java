@@ -15,8 +15,8 @@ import android.widget.Toast;
 
 import com.nauh.demo.R;
 import com.nauh.demo.model.Cat;
-import com.nauh.demo.model.CatAdapter;
-import com.nauh.demo.model.SpinnerAdapter;
+import com.nauh.demo.adapter.CatAdapter;
+import com.nauh.demo.adapter.SpinnerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

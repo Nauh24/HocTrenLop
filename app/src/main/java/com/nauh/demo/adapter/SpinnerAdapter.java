@@ -1,4 +1,4 @@
-package com.nauh.demo.model;
+package com.nauh.demo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
