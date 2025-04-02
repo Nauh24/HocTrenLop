@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
+        <activity
+            android:name=".baitapintent.implicitintent.Bai3ActionPickActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BottomActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nauh.BottomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".baitapintent.implicitintent.Bai2ActionDialActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".intent.IntentFilter2Activity"
             android:exported="true">
@@ -44,7 +76,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".baiTapIntent.bai1_startActivityForResult.LoginActivity"
+            android:name=".baitapintent.bai1startactivityforresult.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,7 +85,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".baiTapIntent.bai1_startActivityForResult.RegisterActivity"
+            android:name=".baitapintent.bai1startactivityforresult.RegisterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +94,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".baiTapIntent.bai1_startActivityForResult.MainActivity"
+            android:name=".baitapintent.bai1startactivityforresult.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

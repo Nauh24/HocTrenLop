@@ -1,4 +1,4 @@
-package com.nauh.demo.baiTapIntent.bai1_startActivityForResult;
+package com.nauh.demo.baitapintent.bai1startactivityforresult;
 
 import android.content.Intent;
 import android.os.Bundle;

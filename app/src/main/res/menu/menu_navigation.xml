@@ -14,4 +14,10 @@
         android:id="@+id/notification"
         android:icon="@drawable/ic_notification"
         />
+
+    <item android:title="Habbits"
+        android:id="@+id/habbits"
+        android:icon="@drawable/ic_habbit"
+        />
+
 </menu>

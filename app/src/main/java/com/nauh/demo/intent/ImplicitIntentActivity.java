@@ -56,6 +56,5 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
             intent.setData(Uri.parse("tel:1234567890"));
             startActivity(intent);
         }
-
     }
 }
