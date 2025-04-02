@@ -1,4 +1,4 @@
-package com.nauh.demo.intent;
+package com.nauh.demo.baiTapIntent.bai1_startActivityForResult;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             Account acc = (Account) intent.getSerializableExtra("account");
             Account user = (Account) intent.getSerializableExtra("user");
             if (acc.getUsername().equals(user.getUsername())  && acc.getPassword().equals(user.getPassword()) ) {
-                txt.setText("Login Success");
+                txt.setText("Hello " + acc.getUsername() + " đã đăng nhập vào hệ thống");
             } else {
                 txt.setText("Login Failed");
             }
