@@ -62,6 +62,20 @@
         <item>HTML</item>
         <item>CSS</item>
     </string-array>
+
+    <string-array name="category">
+        <item>Mua sắm</item>
+        <item>Thời trang</item>
+        <item>Thể thao</item>
+        <item>Giải trí</item>
+        <item>Du lịch</item>
+        <item>Giáo dục</item>
+        <item>Đồ ăn</item>
+        <item>Đi lại</item>
+        <item>Đồ điện tử</item>
+        <item>Đồ gia dụng</item>
+        <item>Sức khỏe</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

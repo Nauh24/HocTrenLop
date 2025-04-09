@@ -88,7 +88,7 @@ public class CatAdapter extends RecyclerView.Adapter<CatAdapter.CatViewHolder> {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Thong bao xoa");
                 builder.setMessage("Ban co chac chan muon xoa " + cat.getName() + " nay khong?");
-                builder.setIcon(R.drawable.remove);
+                builder.setIcon(R.drawable.ic_remove);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
