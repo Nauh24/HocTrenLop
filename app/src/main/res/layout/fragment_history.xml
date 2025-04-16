@@ -13,20 +13,13 @@
         <TextView
             android:layout_marginTop="10dp"
             android:textSize="20sp"
-            android:text="Quản lý chi tiêu"
+            android:text="Danh sách chi tiêu"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        
-        <TextView
-            android:id = "@+id/tvSum"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

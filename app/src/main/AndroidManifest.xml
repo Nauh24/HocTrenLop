@@ -15,6 +15,33 @@
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
         <activity
+            android:name=".kiemtra3mau.activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kiemtra3mau.activity.CourseRegistrationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kiemtra3mau.activity.CourseManagementActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".sqlite.ExpenseManagerActivity"
             android:exported="true">
             <intent-filter>

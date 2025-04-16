@@ -2,14 +2,67 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_marginTop="10dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Nhập chi tiêu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Fragment Search"
-        android:textAlignment="center"
-        android:textSize="32sp" />
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:id="@+id/etFrom"
+        android:textSize="12sp"
+        android:hint="Từ ngày"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etTo"
+        android:textSize="12sp"
+        android:hint="Đến ngày"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_weight="1"
+            android:text="Tìm kiếm"
+            android:textColor="@color/white"
+            android:background="@drawable/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvSum"
+        android:textColor="@color/yellow"
+        android:text="Tổng:"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExpense"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
